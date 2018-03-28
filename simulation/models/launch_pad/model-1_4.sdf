@@ -1,0 +1,61 @@
+<?xml version="1.0" ?>
+<sdf version="1.4">
+  <model name="launch_pad">
+    <static>true</static>
+    <link name="link">
+
+      <collision name="base">
+        <pose>0 0 0.88 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>1.2 1.2 0.02</size>
+          </box>
+        </geometry>
+      </collision>
+
+      <collision name="leg1">
+        <pose>0.52 0.52 0.44 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>0.05 0.05 0.88</size>
+          </box>
+        </geometry>
+      </collision>
+
+      <collision name="leg2">
+        <pose>-0.52 0.52 0.44 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>0.05 0.05 0.88</size>
+          </box>
+        </geometry>
+      </collision>
+
+      <collision name="leg3">
+        <pose>0.52 -0.52 0.44 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>0.05 0.05 0.88</size>
+          </box>
+        </geometry>
+      </collision>
+
+      <collision name="leg4">
+        <pose>-0.52 -0.52 0.44 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>0.05 0.05 0.88</size>
+          </box>
+        </geometry>
+      </collision>
+
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://launch_pad/meshes/drone_stand.dae</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+  </model>
+</sdf>

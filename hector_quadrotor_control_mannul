@@ -1,0 +1,10 @@
+===============controlling====================
+1/source the project
+cd to the [MissionToMars_ws]
+$source ~/[MissionToMars_ws]/devel/setup.bash
+
+2/ turn on the server for control
+$ ~/[MissionToMars_ws]/src/hector_quadrotor$ rosservice call /enable_motors "enable: true"
+
+3/turn on the controlling command input environment
+$~/[MissionToMars_ws]/src/hector_quadrotor$ rosrun teleop_twist_keyboard teleop_twist_keyboard.py 
