@@ -11,6 +11,7 @@ $rosdep install --from-path src --ignore-src
 $catkin build
 
 ======== set up the simulation world ==============================
+
 once the rqt GUI is successfully loaded,
 1. click to choose a saved world
 2. from the list choose: five_homes_with_mars_ground.world
