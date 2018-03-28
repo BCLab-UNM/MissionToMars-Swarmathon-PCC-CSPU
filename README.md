@@ -25,7 +25,7 @@ $~/[SwarmathonBoseCode-PCC-CPSU-directory]/src/hector_quadrotor$ rosrun teleop_t
 ======== set up the simulation world ==============================
 once the rqt is successfully loaded,
 1. click to choose a saved world
-2. from the list choose: five_home_with_mars_ground
+2. from the list choose: five_homes_with_mars_ground.world
 3. choose 4 rovers or any number you like
 4. click on "build simulation"
 
