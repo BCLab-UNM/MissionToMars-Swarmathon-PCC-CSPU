@@ -7,4 +7,4 @@ $source ~/[MissionToMars_ws]/devel/setup.bash
 $ ~/[MissionToMars_ws]/src/hector_quadrotor$ rosservice call /enable_motors "enable: true"
 
 3/turn on the controlling command input environment
-$~/[MissionToMars_ws]/src/hector_quadrotor$ rosrun teleop_twist_keyboard teleop_twist_keyboard.py 
+$~/[MissionToMars_ws]/src/hector_quadrotor$ rosrun teleop_twist_keyboard teleop_twist_keyboard.py
