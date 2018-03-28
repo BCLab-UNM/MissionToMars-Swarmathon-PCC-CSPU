@@ -1816,62 +1816,62 @@ void RoverGUIPlugin::buildSimulationButtonEventHandler()
          */
         QPointF rover_positions[8] =
         {
-//          /* cardinal rovers: North, East, South, West */
-//          QPointF(-1.308,  0.000), // 1.308 = distance_from_center_to_edge_of_collection_zone
-//          QPointF( 0.000, -1.308), //             + 50 cm distance to rover
-//          QPointF( 1.308,  0.000), //             + 30 cm distance_from_center_of_rover_to_edge_of_rover
-//          QPointF( 0.000,  1.308), // 1.308m = 0.508m + 0.5m + 0.3m
+          /* cardinal rovers: North, East, South, West */
+          QPointF(-1.308,  0.000), // 1.308 = distance_from_center_to_edge_of_collection_zone
+          QPointF( 0.000, -1.308), //             + 50 cm distance to rover
+          QPointF( 1.308,  0.000), //             + 30 cm distance_from_center_of_rover_to_edge_of_rover
+          QPointF( 0.000,  1.308), // 1.308m = 0.508m + 0.5m + 0.3m
 
-//          /* corner rovers: Northeast, Southwest */
-//          QPointF( 1.072,  1.072), // 1.072 = diagonal_distance_from_center_to_edge_of_collection_zone
-//          QPointF(-1.072, -1.072), //             + diagonal_distance_to_move_50cm
-//                                   //             + diagonal_distance_to_move_30cm
-//                                   // 1.072m = 0.508 + 0.354 + 0.212
+          /* corner rovers: Northeast, Southwest */
+          QPointF( 1.072,  1.072), // 1.072 = diagonal_distance_from_center_to_edge_of_collection_zone
+          QPointF(-1.072, -1.072), //             + diagonal_distance_to_move_50cm
+                                   //             + diagonal_distance_to_move_30cm
+                                   // 1.072m = 0.508 + 0.354 + 0.212
 
-//          /* corner rovers: Northwest, Southeast */
-//          QPointF(-1.072,  1.072),
-//          QPointF( 1.072, -1.072)
+          /* corner rovers: Northwest, Southeast */
+          QPointF(-1.072,  1.072),
+          QPointF( 1.072, -1.072)
 
             //***************************************************************
 
-            QPointF(-5.000, 5-1.308),
-            QPointF(5.000, 5-1.308),
-            QPointF(-5.000, 1.308-5),
-            QPointF(5.000, 1.308-5),
+//            QPointF(-5.000, 5-1.308),
+//            QPointF(5.000, 5-1.308),
+//            QPointF(-5.000, 1.308-5),
+//            QPointF(5.000, 1.308-5),
 
-            /* corner rovers: Northeast, Southwest */
-            QPointF( 1.072,  1.072), // 1.072 = diagonal_distance_from_center_to_edge_of_collection_zone
-            QPointF(-1.072, -1.072), //             + diagonal_distance_to_move_50cm
-            //             + diagonal_distance_to_move_30cm
-            // 1.072m = 0.508 + 0.354 + 0.212
+//            /* corner rovers: Northeast, Southwest */
+//            QPointF( 1.072,  1.072), // 1.072 = diagonal_distance_from_center_to_edge_of_collection_zone
+//            QPointF(-1.072, -1.072), //             + diagonal_distance_to_move_50cm
+//            //             + diagonal_distance_to_move_30cm
+//            // 1.072m = 0.508 + 0.354 + 0.212
 
-            /* corner rovers: Northwest, Southeast */
-            QPointF(-1.072,  1.072),
-            QPointF( 1.072, -1.072)
+//            /* corner rovers: Northwest, Southeast */
+//            QPointF(-1.072,  1.072),
+//            QPointF( 1.072, -1.072)
         };
 
         /* In this case, the yaw is the value that turns rover "left" and "right" */
         float rover_yaw[8] =
         {
-//           0.000, //  0.00 * PI
-//           1.571, //  0.50 * PI
-//          -3.142, // -1.00 * PI
-//          -1.571, // -0.50 * PI
-//          -2.356, // -0.75 * PI
-//           0.785, //  0.25 * PI
-//          -0.785, // -0.25 * PI
-//           2.356  //  0.75 * PI
+           0.000, //  0.00 * PI
+           1.571, //  0.50 * PI
+          -3.142, // -1.00 * PI
+          -1.571, // -0.50 * PI
+          -2.356, // -0.75 * PI
+           0.785, //  0.25 * PI
+          -0.785, // -0.25 * PI
+           2.356  //  0.75 * PI
 
 
 
-            1.571, //  0.00 * PI top left
-            1.571, //  0.50 * PI bottom left
-           -1.571, // -1.00 * PI top right
-           -1.571, // -0.50 * PI bottom right
-           -2.356, // -0.75 * PI
-            0.785, //  0.25 * PI
-           -0.785, // -0.25 * PI
-            2.356  //  0.75 * PI
+//            1.571, //  0.00 * PI top left
+//            1.571, //  0.50 * PI bottom left
+//           -1.571, // -1.00 * PI top right
+//           -1.571, // -0.50 * PI bottom right
+//           -2.356, // -0.75 * PI
+//            0.785, //  0.25 * PI
+//           -0.785, // -0.25 * PI
+//            2.356  //  0.75 * PI
         };
 
         // Add rovers to the simulation and start the associated ROS nodes
